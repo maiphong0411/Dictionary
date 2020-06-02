@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkPopover" id="about_popover">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkLabel" id="pop_label">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="margin_left">6</property>
+        <property name="margin_right">6</property>
+        <property name="margin_top">8</property>
+        <property name="margin_bottom">8</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTextTagTable" id="texttagtable"/>
+  <object class="GtkTextBuffer" id="textbuffer">
+    <property name="tag_table">texttagtable</property>
+    <property name="text" translatable="yes">@life /laif/
+*  danh từ,  số nhiều lives  /laivz/
+- sự sống
+- đời sống, sinh mệnh, tính mệnh
+=to lay down one's life for the country+ hy sinh tính mệnh cho tổ quốc
+=a matter of life and death+ một vấn đề sống còn
+- đời, người đời
+=to have lived in a place all one's life+ đã sống ở đâu suốt cả đời
+=for life+ suốt đời
+=hard labour for life+ tội khổ sai chung thân
+- cuộc sống, sự sinh sống, sự sinh tồn
+=we are building a new life+ chúng ta đang xây dựng một cuộc sống mới
+=the struggle for life+ cuộc đấu tranh sinh tồn
+- cách sống, đời sống, cách sinh hoạt
+=the country life+ đời sống ở nông thôn, cách sinh hoạt ở nông thôn
+- sinh khí, sinh lực, sự hoạt động
+=to be full of life+ dồi dào sinh lực, hoạt bát
+- tiểu sử, thân thế
+=the life of Lenin+ tiểu sử Lê-nin
+- tuổi thọ, thời gian tồn tại
+=the life of a machine+ tuổi thọ của một cái máy
+=a good life+ người có thể sống trên tuổi thọ trung bình
+=a bad life+ người có thể không đạt tuổi thọ trung bình
+- nhân sinh
+=the philosophy of life+ triết học nhân sinh
+=the problem of life+ vấn đề nhân sinh
+- vật sống; biểu hiện của sự sống
+=no life to be seen+ không một biểu hiện của sự sống; không có một bóng người (vật)
+!as large as life
+- (xem) large
+!to escape with life and limb
+- thoát được an toàn
+!for one's life
+!for dear life
+- để thoát chết
+=to run for dear life+ chạy để thoát chết
+!for the life of me
+!upon my life
+- dù chết
+=I can't for the life of me+ dù chết tôi cũng không thể nào
+!to bring to life
+- làm cho hồi tỉnh
+!to come to life
+- hồi tỉnh, hồi sinh
+!to have the time of one's life
+- chưa bao giờ vui thích thoải mái như thế
+!high life
+- xã hội thượng lưu, xã hội tầng lớp trên
+!in one's life
+- lúc sinh thời
+!in the prime of life
+- lúc tuổi thanh xuân
+!to see life
+- (xem) see
+!single life
+- (xem) single
+!to take someone's life
+- giết ai
+!to take one's own life
+- tự tử, tự sát, tự vẫn
+!to the life
+- truyền thần, như thật
+@Chuyên ngành kỹ thuật
+-độ bền lâu
+-đời sống
+@Lĩnh vực: hóa học &amp; vật liệu
+-sự sống
+@Lĩnh vực: y học
+-sự sống, đời sống
+@Lĩnh vực: cơ khí &amp; công trình
+-tuổi bền
+@Chuyên ngành kỹ thuật
+-độ bền lâu
+-đời sống
+@Lĩnh vực: hóa học &amp; vật liệu
+-sự sống
+@Lĩnh vực: y học
+-sự sống, đời sống
+@Lĩnh vực: cơ khí &amp; công trình
+-tuổi bền
+</property>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Template Window</property>
+    <property name="default_width">640</property>
+    <property name="default_height">380</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel" id="status_label">
+            <property name="can_focus">False</property>
+            <property name="xpad">8</property>
+            <property name="label" translatable="yes">label</property>
+            <property name="xalign">0,00000000022351741291</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">9</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="info_bar">
+            <property name="can_focus">False</property>
+            <property name="spacing">16</property>
+            <child>
+              <object class="GtkLabel" id="notify_label">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xpad">8</property>
+                <property name="label" translatable="yes">Do you want to add?</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="no_button">
+                <property name="label" translatable="yes">No</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="yes_edit">
+                <property name="label" translatable="yes">Yes</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="yes_add">
+                <property name="label" translatable="yes">Yes</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="yes_delete">
+                <property name="label" translatable="yes">Yes</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="padding">8</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="height_request">340</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkViewport">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="shadow_type">none</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkLabel" id="word_label">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="margin_top">6</property>
+                        <property name="margin_bottom">6</property>
+                        <property name="xpad">0</property>
+                        <property name="label" translatable="yes">Life</property>
+                        <property name="xalign">0,50000000000000000000</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                          <attribute name="scale" value="2"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkTextView" id="meaning_textview">
+                        <property name="width_request">600</property>
+                        <property name="height_request">300</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="halign">center</property>
+                        <property name="valign">start</property>
+                        <property name="margin_top">8</property>
+                        <property name="pixels_above_lines">1</property>
+                        <property name="pixels_below_lines">1</property>
+                        <property name="editable">False</property>
+                        <property name="wrap_mode">word-char</property>
+                        <property name="left_margin">16</property>
+                        <property name="right_margin">8</property>
+                        <property name="top_margin">8</property>
+                        <property name="bottom_margin">8</property>
+                        <property name="indent">8</property>
+                        <property name="cursor_visible">False</property>
+                        <property name="buffer">textbuffer</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child type="titlebar">
+      <object class="GtkHeaderBar" id="header_bar">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="show_close_button">True</property>
+        <child>
+          <object class="GtkButton" id="about_button">
+            <property name="label" translatable="yes">About</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="add_button">
+            <property name="label" translatable="yes">Add</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="delete_button">
+            <property name="label" translatable="yes">Delete</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="edit_button">
+            <property name="label" translatable="yes">Edit</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSearchEntry" id="search_entry">
+            <property name="width_request">256</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="activates_default">True</property>
+            <property name="primary_icon_name">edit-find-symbolic</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="primary_icon_sensitive">False</property>
+          </object>
+          <packing>
+            <property name="pack_type">end</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
